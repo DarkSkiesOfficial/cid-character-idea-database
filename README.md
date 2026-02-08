@@ -53,7 +53,7 @@ You can ignore `app/` unless you're a developer.
 
 - **Swipe** — card swiping for quick decisions
 
-![Swipe]https://i.postimg.cc/zvRW0pPk/image-2026-02-08-081252463.png)
+![Swipe](https://i.postimg.cc/zvRW0pPk/image-2026-02-08-081252463.png)
 
 - **Tournament** — bracket-style character comparison
 
