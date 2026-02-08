@@ -8,3 +8,10 @@ export function getAppRoot(): string {
   }
   return dirname(app.getPath('exe'))
 }
+
+export function getUserDataRoot(): string {
+  if (is.dev) {
+    return resolve(join(__dirname, '..', '..', '..', 'data'))
+  }
+  return app.getPath('userData')
+}

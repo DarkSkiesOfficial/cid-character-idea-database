@@ -13,10 +13,10 @@ import { backfillImageHashes, backfillThumbnails } from '../backfill'
 import { IPC } from '../../shared/ipc-channels'
 import { slugify, ensureCharacterFolder, writeCharacterFiles } from './utils'
 import type { ExportMetadata, ImportPreview, LibraryEntry, LibraryRegistry } from '../../shared/types'
-import { getAppRoot } from '../paths'
+import { getUserDataRoot } from '../paths'
 
 // Registry path — matches library-handlers.ts
-const REGISTRY_PATH = join(getAppRoot(), 'libraries.json')
+const REGISTRY_PATH = join(getUserDataRoot(), 'libraries.json')
 
 function getRegistry(): LibraryRegistry {
   const raw = readFileSync(REGISTRY_PATH, 'utf-8')
@@ -306,7 +306,7 @@ export function registerExportImportHandlers(): void {
     const { zipPath, libraryName } = opts
 
     // Determine destination folder
-    const destFolder = join(getAppRoot(), `data-${slugify(libraryName)}-${randomUUID().substring(0, 6)}`)
+    const destFolder = join(getUserDataRoot(), `data-${slugify(libraryName)}-${randomUUID().substring(0, 6)}`)
     mkdirSync(destFolder, { recursive: true })
 
     try {

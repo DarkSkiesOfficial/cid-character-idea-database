@@ -10,10 +10,10 @@ import { getDb, getDataDir, switchLibrary, initDatabase } from '../database'
 import { backfillImageHashes, backfillThumbnails } from '../backfill'
 import { IPC } from '../../shared/ipc-channels'
 import type { LibraryEntry, LibraryRegistry } from '../../shared/types'
-import { getAppRoot } from '../paths'
+import { getUserDataRoot } from '../paths'
 
-// Registry lives in the app root (project root in dev, userData in production)
-const REGISTRY_PATH = join(getAppRoot(), 'libraries.json')
+// Registry lives in userData directory (project root/data in dev, ~/.config/app in production)
+const REGISTRY_PATH = join(getUserDataRoot(), 'libraries.json')
 
 function saveRegistry(registry: LibraryRegistry): void {
   writeFileSync(REGISTRY_PATH, JSON.stringify(registry, null, 2), 'utf-8')

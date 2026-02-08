@@ -6,10 +6,10 @@ import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import { initDatabase } from './database'
 import { registerIpcHandlers } from './ipc-handlers'
 import { loadOrCreateRegistry } from './handlers/library-handlers'
-import { getAppRoot } from './paths'
+import { getUserDataRoot } from './paths'
 
 // Default data dir used for first-run and fallback
-const DEFAULT_DATA_DIR = join(getAppRoot(), 'data')
+const DEFAULT_DATA_DIR = join(getUserDataRoot(), 'data')
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
