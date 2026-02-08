@@ -2,7 +2,14 @@
   "name": "character-idea-database",
   "version": "0.1.0",
   "description": "A visual character idea library for browsing, tagging, and organizing creative character concepts",
-  "author": "DarkSkies",
+  "author": {
+    "name": "DarkSkies"
+  },
+  "homepage": "https://github.com/DarkSkiesOfficial/cid-character-idea-database",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarkSkiesOfficial/cid-character-idea-database"
+  },
   "license": "MIT",
   "main": "./out/main/index.js",
   "scripts": {
@@ -12,11 +19,14 @@
     "start": "electron-vite dev",
     "postinstall": "electron-builder install-app-deps",
     "package": "electron-vite build && electron-builder --win",
-    "package:dir": "electron-vite build && electron-builder --win --dir"
+    "package:dir": "electron-vite build && electron-builder --win --dir",
+    "package:mac": "electron-vite build && electron-builder --mac",
+    "package:linux": "electron-vite build && electron-builder --linux",
+    "package:all": "electron-vite build && electron-builder --win --mac --linux"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
-    "better-sqlite3": "^11.7.0",
+    "better-sqlite3": "^12.6.2",
     "react-markdown": "^10.1.0"
   },
   "devDependencies": {
@@ -29,14 +39,14 @@
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "electron": "^33.3.1",
-    "electron-builder": "^25.1.8",
-    "electron-vite": "^2.3.0",
+    "electron": "^40.2.1",
+    "electron-builder": "^26.7.0",
+    "electron-vite": "^5.0.0",
     "postcss": "^8.4.49",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
-    "vite": "^5.4.0"
+    "vite": "^7.3.1"
   }
 }
