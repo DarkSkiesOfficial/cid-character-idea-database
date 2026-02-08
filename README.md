@@ -8,13 +8,17 @@ Store character profiles with images, notes, tags, groups, and custom fields —
 
 ## How to Install
 
-You have two options:
+### Windows
+- **Installer:** Run **`Character Idea Database Setup 0.1.0.exe`** and follow the prompts
+- **Portable:** Run the portable `.exe` directly — no installation needed
 
-### Option 1: Installer (Recommended)
-Run **`Character Idea Database Setup 0.1.0.exe`** and follow the prompts. It installs like any normal Windows app and creates a desktop shortcut.
+### macOS
+- **DMG:** Open the `.dmg` file and drag to Applications folder
+- **ZIP:** Extract and run the app
 
-### Option 2: Portable
-Open the **`portable/`** folder and double-click **`Character Idea Database.exe`**. No installation needed — runs directly. You can put this folder anywhere (USB drive, Dropbox, etc).
+### Linux
+- **AppImage:** Make executable (`chmod +x`) and run — works on all distributions
+- **DEB:** Install with `sudo dpkg -i character-idea-database_0.1.0_amd64.deb` (Debian/Ubuntu/Mint)
 
 ---
 
@@ -74,11 +78,16 @@ npm run dev
 
 Requires [Node.js](https://nodejs.org/) 18+.
 
-To build a new distributable:
-```
+To build distributables:
+```bash
 cd app
-npm run package
+npm run package        # Windows (NSIS installer + portable)
+npm run package:mac    # macOS (DMG + ZIP)
+npm run package:linux  # Linux (AppImage + DEB)
+npm run package:all    # All platforms
 ```
+
+**Note:** RPM packages are not built by default. To enable RPM building, add `rpm` to the `linux.target` array in `electron-builder.yml` and install `rpm` package on your build system.
 
 ---
 

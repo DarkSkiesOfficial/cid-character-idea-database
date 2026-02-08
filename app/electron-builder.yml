@@ -16,11 +16,23 @@ win:
     - nsis
     - portable
   icon: resources/icon.png
-  signDlls: false
-  sign: null
 
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
   installerSidebar: null
   uninstallerSidebar: null
+
+mac:
+  target:
+    - dmg
+    - zip
+  icon: resources/icon.icns
+  category: public.app-category.productivity
+
+linux:
+  target:
+    - AppImage
+    - deb
+  icon: resources/icon.png
+  category: Utility
