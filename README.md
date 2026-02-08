@@ -18,18 +18,6 @@ Open the **`portable/`** folder and double-click **`Character Idea Database.exe`
 
 ---
 
-## What's in This Folder
-
-| File/Folder | What it is |
-|---|---|
-| `Character Idea Database Setup 0.1.0.exe` | Windows installer |
-| `portable/` | Standalone version — run the exe inside |
-| `app/` | Source code (only needed if you want to modify the app) |
-| `README.md` | This file |
-| `LICENSE` | MIT open source license |
-
-You can ignore `app/` unless you're a developer.
-
 ## Features
 
 **Organization**
