@@ -1,0 +1,26 @@
+appId: com.character-idea-database
+productName: Character Idea Database
+
+directories:
+  buildResources: resources
+  output: dist
+
+files:
+  - out/**/*
+  - package.json
+
+asar: true
+
+win:
+  target:
+    - nsis
+    - portable
+  icon: resources/icon.png
+  signDlls: false
+  sign: null
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerSidebar: null
+  uninstallerSidebar: null

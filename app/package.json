@@ -1,0 +1,42 @@
+{
+  "name": "character-idea-database",
+  "version": "0.1.0",
+  "description": "A visual character idea library for browsing, tagging, and organizing creative character concepts",
+  "author": "DarkSkies",
+  "license": "MIT",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "start": "electron-vite dev",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "electron-vite build && electron-builder --win",
+    "package:dir": "electron-vite build && electron-builder --win --dir"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "better-sqlite3": "^11.7.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^4.0.0",
+    "@electron/rebuild": "^4.0.3",
+    "@types/adm-zip": "^0.5.7",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "postcss": "^8.4.49",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.0"
+  }
+}
