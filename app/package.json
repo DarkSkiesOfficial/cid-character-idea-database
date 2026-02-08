@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "description": "A visual character idea library for browsing, tagging, and organizing creative character concepts",
   "author": {
-    "name": "DarkSkies",
-    "email": "darkskies@example.com"
+    "name": "DarkSkies"
   },
-  "homepage": "https://github.com/rdeforest/cid-character-idea-database",
+  "homepage": "https://github.com/DarkSkiesOfficial/cid-character-idea-database",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rdeforest/cid-character-idea-database"
+    "url": "https://github.com/DarkSkiesOfficial/cid-character-idea-database"
   },
   "license": "MIT",
   "main": "./out/main/index.js",
