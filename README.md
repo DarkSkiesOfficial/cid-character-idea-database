@@ -1,8 +1,9 @@
 # CID — Character Idea Database
+*by DarkSkies*
 
-A desktop app for organizing, browsing, and managing creative character ideas. Built for writers, artists, game designers, and anyone who collects character concepts.
+A desktop app for organizing, browsing, and managing creative character ideas. Built for character card writers, artists, game designers, and anyone who collects character concepts.
 
-Store character profiles with images, notes, tags, groups, and custom fields — then browse them through multiple visual modes.
+Store character profiles with images, notes, tags, groups, and custom fields, then browse them through multiple visual modes.
 
 ---
 
@@ -11,10 +12,10 @@ Store character profiles with images, notes, tags, groups, and custom fields —
 You have two options:
 
 ### Option 1: Installer (Recommended)
-Run **`Character Idea Database Setup 0.1.0.exe`** and follow the prompts. It installs like any normal Windows app and creates a desktop shortcut.
+Download the .exe, on the releases page, and run **`Character Idea Database Setup 0.1.0.exe`** and follow the prompts. It installs like any normal Windows app and creates a desktop shortcut.
 
 ### Option 2: Portable
-Open the **`portable/`** folder and double-click **`Character Idea Database.exe`**. No installation needed — runs directly. You can put this folder anywhere (USB drive, Dropbox, etc).
+Download the portable zip, on the releases page, open the folder and double-click **`Character Idea Database.exe`**. No installation needed — runs directly. You can put this folder anywhere (USB drive, Dropbox, etc).
 
 ---
 
@@ -43,7 +44,7 @@ Open the **`portable/`** folder and double-click **`Character Idea Database.exe`
 
 ![Swipe](https://i.postimg.cc/zvRW0pPk/image-2026-02-08-081252463.png)
 
-- **Tournament** — bracket-style character comparison
+- **Tournament** — bracket-style character comparison, for when you can't decide
 
 ![Tournament Mode](https://i.postimg.cc/8zbyRPvp/image-2026-02-08-081335771.png)
 
